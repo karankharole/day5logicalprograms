@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Day5problems num = new Day5problems();
-            num.Swap_Two_Number();
+            num.Check_Even_Or_Odd();
 
 
         }

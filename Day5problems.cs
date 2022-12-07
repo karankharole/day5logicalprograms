@@ -8,15 +8,19 @@ namespace Day5logicalprograms
 {
     internal class Day5problems
     {
-        public void Swap_Two_Number()
+        public void Check_Even_Or_Odd()
         {
-            int num1 = 12;
-            int num2 = 23;
-            int temp;
-            temp = num1;
-            num1 = num2;
-            num2 = temp;
-            Console.WriteLine("Swapping of number is  : " + num1 + " " + num2);
+            int number;
+            Console.WriteLine("Enter the Number to check Even or Odd : ");
+            number = int.Parse(Console.ReadLine());
+            if (number % 2 == 0)
+            {
+                Console.WriteLine("Number is Even");
+            }
+            else
+            {
+                Console.WriteLine("Number is Odd");
+            }
 
         }
 
