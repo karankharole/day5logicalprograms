@@ -8,26 +8,24 @@ namespace Day5logicalprograms
 {
     internal class Day5problems
     {
-        public void Leap_Year()
+        public void Power_Of_2()
         {
-            int year = 2022;
-            if (year > 1000 && year < 9999)
+            Console.WriteLine("Enter a number : ");
+            string inputByUser = Console.ReadLine();
+            int numVal = Int32.Parse(inputByUser);
+            if (numVal >= 0 || numVal < 31)
             {
-                if (year % 4 == 0 || year % 400 == 0)
+                int temp = 1;
+                for (int i = 0; i < numVal; i++)
                 {
-                    Console.WriteLine("Leay year.");
+                    temp = 2 * temp;
+                    Console.WriteLine(temp);
                 }
-                else
-                {
-                    Console.WriteLine("not leap year");
-                }
+
+
             }
-            else
-            {
-                Console.WriteLine("Wrong Input .");
-            }
+
+
         }
-
-
     }
 }

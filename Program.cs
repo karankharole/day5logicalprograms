@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Day5problems num = new Day5problems();
-            num.Leap_Year();
+            num.Power_Of_2();
 
 
         }
