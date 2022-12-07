@@ -5,8 +5,9 @@
         static void Main(string[] args)
         {
             Day5problems num = new Day5problems();
-               num.flipCoin();
-            
+            num.Leap_Year();
+
+
         }
     }
 }
