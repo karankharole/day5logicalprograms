@@ -8,24 +8,48 @@ namespace Day5logicalprograms
 {
     internal class Day5problems
     {
-        public void Check_Char_Vowel_Or_Consonant()
+        public void Largest_Among_Three_Numbers()
         {
-            char ch;
+            // int num1 = 12;
+            // int num2 = 23;
+            // int num3 = 10;
 
-            Console.WriteLine("Enter any character: ");
-            ch = Convert.ToChar(Console.ReadLine());
-
-
-            // Condition for vowel checking
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+            Console.WriteLine("Enter first number : ");
+            string str1 = Console.ReadLine();
+            int num1 = Int32.Parse(str1);
+            Console.WriteLine("Enter second number : ");
+            string str2 = Console.ReadLine();
+            int num2 = Int32.Parse(str2);
+            Console.WriteLine("Enter third number : ");
+            string str3 = Console.ReadLine();
+            int num3 = Int32.Parse(str3);
+            Console.WriteLine(num1 + " @@@@@@@");
+            Console.WriteLine(num1 + " %%%%%%");
+            Console.WriteLine(num1 + " @@@@@@@&&&&&&");
+            if (num1 > num2)
             {
-
-                Console.WriteLine(ch + " is Vowel.");
-
+                if (num1 > num3)
+                {
+                    Console.WriteLine(num1 + " is greatest ");
+                }
+                else
+                {
+                    Console.WriteLine(num3 + "  is greatest .");
+                }
             }
-            else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+            else
             {
-                Console.WriteLine(ch + " is Consonant.");
+                if (num2 > num3)
+                {
+                    if (num2 > num1)
+                    {
+                        Console.WriteLine(num2 + " is greatest . ");
+                    }
+                    else
+                    {
+                        Console.WriteLine(num1 + " is greatest . ");
+                    }
+                }
             }
         }
 

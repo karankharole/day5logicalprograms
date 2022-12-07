@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Day5problems num = new Day5problems();
-            num.Check_Char_Vowel_Or_Consonant();
+            num.Largest_Among_Three_Numbers();
 
 
         }
