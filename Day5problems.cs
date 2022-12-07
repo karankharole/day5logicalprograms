@@ -8,20 +8,25 @@ namespace Day5logicalprograms
 {
     internal class Day5problems
     {
-        public void Check_Even_Or_Odd()
+        public void Check_Char_Vowel_Or_Consonant()
         {
-            int number;
-            Console.WriteLine("Enter the Number to check Even or Odd : ");
-            number = int.Parse(Console.ReadLine());
-            if (number % 2 == 0)
-            {
-                Console.WriteLine("Number is Even");
-            }
-            else
-            {
-                Console.WriteLine("Number is Odd");
-            }
+            char ch;
 
+            Console.WriteLine("Enter any character: ");
+            ch = Convert.ToChar(Console.ReadLine());
+
+
+            // Condition for vowel checking
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+            {
+
+                Console.WriteLine(ch + " is Vowel.");
+
+            }
+            else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+            {
+                Console.WriteLine(ch + " is Consonant.");
+            }
         }
 
     }
